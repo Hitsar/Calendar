@@ -17,25 +17,15 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         _moveInput = Input.GetAxis("Horizontal");
-
-        if (Input.GetButton("Horizontal"))
-        {
-            _rigidbody.velocity = new Vector2(_moveInput * _speed, _rigidbody.velocity.y);
-        }
-
         if (Input.GetButtonDown("Jump") && _isGround)
         {
             _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        _isGround = true;
-    }
+    private void FixedUpdate() => _rigidbody.velocity = new Vector2(_moveInput * _speed, _rigidbody.velocity.y);
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        _isGround = false;
-    }
+    private void OnCollisionStay2D(Collision2D collision) => _isGround = true;
+
+    private void OnCollisionExit2D(Collision2D collision) => _isGround = false;
 }

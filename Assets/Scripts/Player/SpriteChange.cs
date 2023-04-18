@@ -23,7 +23,7 @@ public class SpriteChange : MonoBehaviour
 
     private IEnumerator Change()
     {
-        var second = new WaitForSeconds(2f);
+        var second = new WaitForSeconds(1.95f);
         while (_sprite <= 30)
         {
             yield return second;

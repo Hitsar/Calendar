@@ -8,14 +8,14 @@ public class Finish : MonoBehaviour
     private void Start()
     {
         _menu = FindObjectOfType<FinishMenu>(true);
-        _timer = FindObjectOfType<Timer>().GetComponent<Timer>();
+        _timer = FindObjectOfType<Timer>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.TryGetComponent(out SpriteChange player))
         {
-            _menu.gameObject.SetActive(true);
             _timer.Stop();
+            _menu.gameObject.SetActive(true);
             player.gameObject.SetActive(false);
         }
     }
