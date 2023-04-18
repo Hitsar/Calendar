@@ -2466,7 +2466,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!4 &760838834
 Transform:
@@ -3202,7 +3202,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!61 &932262361
 BoxCollider2D:
@@ -3848,7 +3848,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.40342385}
+  m_Offset: {x: 0, y: -0.41827673}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3859,7 +3859,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.84821916, y: 0.08276999}
+  m_Size: {x: 0.8568915, y: 0.053064227}
   m_EdgeRadius: 0
 --- !u!114 &1062597759
 MonoBehaviour:
@@ -5733,7 +5733,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!4 &1485877689
 Transform:
@@ -5843,8 +5843,8 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 0.41960785}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 8.28, y: 5.2}
+  m_DrawMode: 2
+  m_Size: {x: 8.28, y: 6.973038}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5858,7 +5858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497061910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.6912012, y: 9.27, z: 0}
+  m_LocalPosition: {x: -0.6912012, y: 14.0657, z: 0}
   m_LocalScale: {x: 4.1921654, y: 5.4096003, z: 4.1921654}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5896,7 +5896,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.105380416, y: -0.013131797}
+  m_Offset: {x: 0.111889064, y: -0.013131797}
   m_SpriteTilingProperty:
     border: {x: 0.26, y: 0.04, z: 0.38, w: 0.04}
     pivot: {x: 0.5, y: 0.5}
@@ -5907,7 +5907,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.980762, y: 0.6437366}
+  m_Size: {x: 1.823086, y: 0.6437366}
   m_EdgeRadius: 0
 --- !u!212 &1515837477
 SpriteRenderer:
@@ -5969,8 +5969,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515837475}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.008, y: -5.8016, z: 0}
-  m_LocalScale: {x: 10.352418, y: 3.91669, z: 1}
+  m_LocalPosition: {x: 0.008, y: -5.9423, z: 0}
+  m_LocalScale: {x: 11.269422, y: 4.3365593, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 937705524}
@@ -6259,7 +6259,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.021356255}
+  m_Offset: {x: 0, y: -0.0029484332}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6270,7 +6270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.87931406, y: 0.7996574}
+  m_Size: {x: 0.87931406, y: 0.8482668}
   m_EdgeRadius: 0
 --- !u!4 &1658865013
 Transform:
@@ -6750,7 +6750,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!114 &1812900514
 MonoBehaviour:
