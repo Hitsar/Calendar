@@ -17,8 +17,9 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         _moveInput = Input.GetAxis("Horizontal");
-        if (Input.GetButtonDown("Jump") && _isGround)
+        if (Input.GetKey(KeyCode.Space) && _isGround)
         {
+            _rigidbody.velocity = new Vector2(_moveInput, 0);
             _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
         }
     }

@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
     public void Stop()
     {
         _isWork = false;
-        if (Progress.Instance.PlayerInfo.Time > _time)
+        if (Progress.Instance.PlayerInfo.Time > _time || Progress.Instance.PlayerInfo.Time < 20)
         {
             Progress.Instance.PlayerInfo.Time = _time;
             SetToLeaderboard(_time);

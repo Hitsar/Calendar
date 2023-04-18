@@ -26,7 +26,6 @@ public class Progress : MonoBehaviour
             transform.parent = null;
             DontDestroyOnLoad(gameObject);
             Instance = this;
-            PlayerInfo.Time = 100;
             LoadExtern();
         }
         else
