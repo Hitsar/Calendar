@@ -1,5 +1,7 @@
+using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [System.Serializable]
 
@@ -10,6 +12,7 @@ public class PlayerInfo
 
 public class Progress : MonoBehaviour
 {
+    [SerializeField] private AudioMixerGroup _audioMixer;
     public PlayerInfo PlayerInfo;
 
     [DllImport("__Internal")]
@@ -44,4 +47,7 @@ public class Progress : MonoBehaviour
     {
         PlayerInfo = JsonUtility.FromJson<PlayerInfo>(value);
     }
+
+    public void MuteAudio() => _audioMixer.audioMixer.SetFloat("Master", Single.MinValue);
+    public void PlayAudio() =>  _audioMixer.audioMixer.SetFloat("Master", 0);
 }
