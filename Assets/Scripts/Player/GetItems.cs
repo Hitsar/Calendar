@@ -5,7 +5,7 @@ public class GetItems : MonoBehaviour
 {
     [SerializeField] private GameObject _barrier;
     [SerializeField] private TMP_Text _text;
-    private int _itemsCount;
+    private byte _itemsCount;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
         _recordText.text = Progress.Instance.PlayerInfo.Time.ToString();
         _startButton.transform.DOScale(Vector2.one, 1).SetEase(Ease.OutElastic).OnComplete(() =>
         {
-            _startButton.transform.DOScale(new Vector2(1.1f, 1.1f), 0.7f).SetEase(Ease.InOutCubic)
+            _startButton.transform.DOScale(new Vector2(1.08f, 1.08f), 0.7f).SetEase(Ease.InOutCubic)
                 .SetLoops(-1, LoopType.Yoyo);
         });
         _recordText.transform.DOLocalMoveY(-150, 1).SetEase(Ease.OutBack);

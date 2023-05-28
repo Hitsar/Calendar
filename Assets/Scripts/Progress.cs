@@ -12,7 +12,7 @@ public class PlayerInfo
 
 public class Progress : MonoBehaviour
 {
-    [SerializeField] private AudioMixerGroup _audioMixer;
+    [SerializeField] private AudioSource _audio;
     public PlayerInfo PlayerInfo;
 
     [DllImport("__Internal")]
@@ -24,17 +24,14 @@ public class Progress : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            transform.parent = null;
-            DontDestroyOnLoad(gameObject);
-            Instance = this;
-            LoadExtern();
-        }
-        else
+        if (Instance != null)
         {
             Destroy(gameObject);
+            return;
         }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+        LoadExtern();
     }
 
     public void Save()
@@ -48,6 +45,6 @@ public class Progress : MonoBehaviour
         PlayerInfo = JsonUtility.FromJson<PlayerInfo>(value);
     }
 
-    public void MuteAudio() => _audioMixer.audioMixer.SetFloat("Master", Single.MinValue);
-    public void PlayAudio() =>  _audioMixer.audioMixer.SetFloat("Master", 0);
+    public void MuteAudio() => _audio.mute = true;
+    public void PlayAudio() => _audio.mute = false;
 }

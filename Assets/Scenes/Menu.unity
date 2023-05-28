@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742f541d5f294c94893941ce6ff55b3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioMixer: {fileID: 24300002, guid: 81382b691a7d6594da27946ed8cb32fb, type: 2}
+  _audio: {fileID: 94886977}
   PlayerInfo:
     Time: 0
 --- !u!4 &94886976
@@ -565,7 +565,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4
   m_IsActive: 1
 --- !u!114 &1351201564
 MonoBehaviour:

@@ -7,7 +7,7 @@ public class SpriteChange : MonoBehaviour
     [SerializeField] private List<Sprite> _sprites = new List<Sprite>();
     private SpriteRenderer _spriteRenderer;
 
-    private int _sprite;
+    private byte _sprite;
     private FinishMenu _menu;
     private Timer _timer;
 
